@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -6,10 +7,11 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'marker' :["Permanent Marker", 'cursive'],
-      'nunito' :["Nunito",' sans-serif'],
-      'ubuntu' :["Ubuntu", 'sans-serif'],
-    }
+      'marker': ["Permanent Marker", 'cursive'],
+      'nunito': ["Nunito", ' sans-serif'],
+      'ubuntu': ["Ubuntu", 'sans-serif'],
+    },
+   
   },
   plugins: [],
-}
+};

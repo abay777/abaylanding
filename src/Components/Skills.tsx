@@ -1,12 +1,13 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Parallax, useParallax } from 'react-scroll-parallax';
+import { motion} from 'framer-motion';
+import { useParallax } from 'react-scroll-parallax';
 import { TiHtml5 } from 'react-icons/ti';
-import { BiSolidFileCss } from 'react-icons/bi';
+import { BiLogoTypescript, BiSolidFileCss } from 'react-icons/bi';
 import { GrReactjs } from 'react-icons/gr';
 import { SiRedux, SiTailwindcss } from 'react-icons/si';
 import { RiJavascriptFill } from 'react-icons/ri';
 import abaybg from '../assets/abay with bg.png';
+import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im';
 
 export const Skills: React.FC = () => {
 
@@ -28,41 +29,65 @@ export const Skills: React.FC = () => {
 
       <section className='flex-col    '>
         
-        <article  className='flex gap-[1rem] mt-10 justify-center  '>
-              <div className='flex gap-16 items-center' ref={parallax.ref}>
-                  <TiHtml5 size={100} className='text-orange-600' />
-                  <RiJavascriptFill size={100} className='text-yellow-500' />
+        <article  className='flex gap-[3rem] mt-10 justify-center md:flex-nowrap flex-wrap  '>
+              <div className='flex gap-5 items-center' ref={parallax.ref}>
+                  <TiHtml5 size={70} className='text-orange-600' />
+                  <BiSolidFileCss size={70} className='text-blue-500' />
+                  <SiTailwindcss size={70} className='text-[#359aff]' />
               </div>
-              <div className='flex gap-16 items-center' >
-                  <BiSolidFileCss size={100} className='text-blue-500' />
-                  <SiTailwindcss size={100} className='text-[#359aff]' />
+              <div className='flex gap-5 items-center' >
+                  <RiJavascriptFill size={70} className='text-yellow-500' />
+                  <BiLogoTypescript size={70} className='text-blue-600'/>
+              
               </div>
-              <div className='flex gap-16 items-center' ref={parallax.ref}>
-                  <GrReactjs size={100} className='text-[#2ab1bb]' />
-                  <SiRedux size={100} className='text-[#5f2ec0]' />
+              <div className='flex gap-5 items-center' ref={parallax.ref}>
+                  <GrReactjs size={70} className='text-[#2ab1bb]' />
+                  <SiRedux size={70} className='text-[#5f2ec0]' />
               </div>
         </article>
         
-        <article className='flex mt-10 justify-evenly'>
-                    <motion.article className='flex justify-between '
+        <article className=' mt-10 md:flex grid grid-cols-1 justify-evenly p-2'>
+                    <motion.article className='flex md:justify-normal justify-center '
                      initial={{translateY:-100, opacity:0}}
                      whileInView={{translateY:0, opacity:1}}
                      transition={{duration:1}}>
-                      <img src={abaybg} alt="" className='w-[24rem] object-fill rounded-lg m-0'  />
+                     <motion.img
+                        src={abaybg}
+                        alt="Abay sankar"
+                        className='w-[24rem] object-fill m-0 '      
+                        initial={{ borderRadius:'83% 5% 70% 8%' }}
+                        animate={{ borderRadius:'23% 80% 10% 82%' }}
+                        transition={{ duration: 14, ease: 'easeInOut' , repeatType:'reverse' ,repeat:Infinity}}
+                      />
+
                     </motion.article>
-                  <article className='relative'>
-                    <p ref={textParallax.ref} className=' font-medium text-[#AA4465] flex justify-center items-center text-start  w-[30rem]  leading-8 '>
-                      As a passionate web developer, I bring a dynamic skill set to the table. My expertise spans the latest technologies, including HTML5, CSS3, and JavaScript, allowing me to craft interactive and visually stunning web applications.
-                      Utilizing frameworks like React and state management with Redux, I build scalable and efficient front-end solutions. Additionally, my proficiency in Tailwind CSS ensures a seamless and responsive user experience.
-                      Let's collaborate to transform ideas into impactful digital experiences. Your success is my priority.
+                   
+                  <article className='relative flex-col  '>
+                    <p ref={textParallax.ref} className='p-4 pt-[rem] md:p-0 font-medium text-[#462255] flex-col  items-center md:text-start text-center w-[100%] md:w-[30rem]  leading-8 '>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#AA4465" className="bi bi-quote md:-ml-[2rem] size-[1.5rem]" viewBox="0 0 16 16">
+                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>
+                        As a passionate web developer, I specialize in crafting interactive web experiences using HTML5, CSS3, and JavaScript. 
+                        My expertise extends to TypeScript, adding a layer of precision to my code. Leveraging frameworks like React and state management with Redux, 
+                        I create scalable and efficient front-end solutions. With a flair for captivating animations 
+                        and a keen eye for design using Tailwind CSS, I transform ideas into impactful digital experiences.
+                        Let's collaborate and bring your vision to life with innovation and success at the forefront.    
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="#AA4465" className="bi bi-quote rotate-180 ml-[20rem] md:ml-[12rem] size-[1.5rem]" viewBox="0 0 16 16">
+                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>
                     </p>
-                    <svg className='absolute -top-16 -z-10 opacity-25' viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+               
+                    <svg className='absolute top-0 md:-top-2 -z-10 opacity-25 md:w-[90%] w-[80%]  lg:w-max' viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                       <path fill="#93E1D8" d="M41.8,-53.3C53.6,-39.9,62.2,-26.2,68,-9.6C73.8,7,76.7,26.5,69.2,40.4C61.7,54.3,43.8,62.7,26.1,67C8.5,71.3,-8.8,71.5,-25,66.6C-41.3,61.6,-56.4,51.5,-61.2,37.9C-66,24.3,-60.4,7.3,-57.3,-10.1C-54.2,-27.4,-53.5,-45.2,-44.3,-59C-35.2,-72.9,-17.6,-82.9,-1.3,-81.3C15,-79.8,30,-66.7,41.8,-53.3Z" transform="translate(100 100)" />
                     </svg>
                   </article>
+                 
         </article>
       
       </section>
+      <div className='flex justify-center items-center mt-[7rem] md:mt-10 text-white font-ubuntu font-medium  md:ml-[11rem]'>
+      <button className='py-5 px-7 bg-[#462255] rounded-lg text-center hover:bg-[#AA4465] hover:duration-500 capitalize ease-in-out'>let's Collaborate</button>
+      </div>
     
      
     </section>
