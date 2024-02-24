@@ -1,4 +1,5 @@
 import { Navbar } from "./Navbar";
 import { Hero } from "./Hero";
 import { Skills } from "./Skills";
-export {Navbar ,Hero , Skills};
+import { ChooseMe } from "./ChooseMe";
+export {Navbar ,Hero , Skills , ChooseMe };

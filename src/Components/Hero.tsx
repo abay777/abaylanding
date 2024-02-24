@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export const Hero:React.FC = () => {
   return (
   
-  <section className='h-[30rem]  font-nunito flex flex-col-reverse justify-evenly items-center md:flex-row pt-[8rem] md:pt-0 md:justify-evenly md:items-center '>
+  <section className='h-[30rem] font-nunito flex flex-col-reverse justify-evenly items-center md:flex-row pt-[8rem] md:pt-0 md:justify-evenly md:items-center -mb-[10rem] '>
     <motion.article 
      initial={{opacity:0 , y:'100%'}}
 
