@@ -6,13 +6,13 @@ import { motion } from 'framer-motion'
 export const Hero:React.FC = () => {
   return (
   
-  <section className='h-[30rem] font-nunito flex flex-col-reverse justify-evenly items-center md:flex-row pt-[8rem] md:pt-0 md:justify-evenly md:items-center -mb-[10rem] '>
+  <section className='h-[30rem] font-nunito flex flex-col-reverse justify-evenly items-center md:flex-row pt-[8rem] md:pt-0 md:justify-evenly md:items-center -mb-[10rem]  '>
     <motion.article 
      initial={{opacity:0 , y:'100%'}}
 
       transition={{ ease:'easeInOut', duration: 1}}
       whileInView={{opacity:1, y:0}}
-    className='px-[3rem] text-[#FFA69E] font-medium text-xl font-ubuntu flex flex-col justify-center items-center'>
+    className='px-[3rem] text-[#FFA69E] font-medium text-xl font-ubuntu flex flex-col justify-center items-center '>
         <h2 className='text-3xl md:text-5xl font-bold tracking-wider text-[#AA4465] font-nunito'>
             Hey I'm Abay sankar
         </h2>
@@ -28,7 +28,7 @@ export const Hero:React.FC = () => {
         <h4 className='text-2xl mt-2 '>Based In India,Kerala</h4>
         <p className='text-xl mt-2'>passionately turning designs to webpages....</p>
         <article 
-        className='mt-6 flex justify-start'>
+        className='mt-6 flex justify-start '>
           <motion.button
           initial={{opacity:0 , scale:0,y:'100%'}}
           transition={{ease:'easeInOut', duration:2}}
