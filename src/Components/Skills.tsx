@@ -23,7 +23,7 @@ export const Skills: React.FC = () => {
 
   return (
     <>
-    <svg className=' w-full md:mt-0 mt-[10rem]' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="330" preserveAspectRatio="none" viewBox="0 0 1440 330">
+    <svg className=' w-full md:mt-0 mt-[10rem]' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" xmlnssvgjs="http://svgjs.dev/svgjs" width="1440" height="330" preserveAspectRatio="none" viewBox="0 0 1440 330">
         <g mask="url(&quot;#SvgjsMask1031&quot;)" fill="none">
             <path d="M 0,99 C 48,83.8 144,14.6 240,23 C 336,31.4 384,138 480,141 C 576,144 624,33.6 720,38 C 816,42.4 864,167.4 960,163 C 1056,158.6 1104,25 1200,16 C 1296,7 1392,97.6 1440,118L1440 330L0 330z" fill="rgba(221, 255, 247, 1)"></path>
             <path d="M 0,285 C 32,275.4 96,235.2 160,237 C 224,238.8 256,293.8 320,294 C 384,294.2 416,238 480,238 C 544,238 576,300 640,294 C 704,288 736,203.2 800,208 C 864,212.8 896,320.4 960,318 C 1024,315.6 1056,204.6 1120,196 C 1184,187.4 1216,273.6 1280,275 C 1344,276.4 1408,217.4 1440,203L1440 330L0 330z" fill="rgba(156, 231, 222, 1)"></path>
@@ -102,7 +102,7 @@ export const Skills: React.FC = () => {
       <button className='py-5 px-7 bg-[#462255] rounded-lg text-center hover:bg-[#AA4465] hover:duration-500 capitalize ease-in-out'>let's Collaborate</button>
       </div>
     </section>
-    <svg className='rotate-180 w-full' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsxlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="330" preserveAspectRatio="none" viewBox="0 0 1440 330">
+    <svg className='rotate-180 w-full' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="330" preserveAspectRatio="none" viewBox="0 0 1440 330">
         <g mask="url(&quot;#SvgjsMask1031&quot;)" fill="none">
             <path d="M 0,99 C 48,83.8 144,14.6 240,23 C 336,31.4 384,138 480,141 C 576,144 624,33.6 720,38 C 816,42.4 864,167.4 960,163 C 1056,158.6 1104,25 1200,16 C 1296,7 1392,97.6 1440,118L1440 330L0 330z" fill="rgba(221, 255, 247, 1)"></path>
             <path d="M 0,285 C 32,275.4 96,235.2 160,237 C 224,238.8 256,293.8 320,294 C 384,294.2 416,238 480,238 C 544,238 576,300 640,294 C 704,288 736,203.2 800,208 C 864,212.8 896,320.4 960,318 C 1024,315.6 1056,204.6 1120,196 C 1184,187.4 1216,273.6 1280,275 C 1344,276.4 1408,217.4 1440,203L1440 330L0 330z" fill="rgba(156, 231, 222, 1)"></path>

@@ -1,6 +1,6 @@
 
 import './App.css'
-import { ChooseMe, Hero, Navbar, Skills } from './Components'
+import { ChooseMe, Hero, Navbar, ProjectIntro, Skills } from './Components'
 import { ParallaxProvider } from 'react-scroll-parallax';
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
       <Hero/>
       <Skills/>
       <ChooseMe/>
+      <ProjectIntro/>
     </ParallaxProvider>
   )
 }
