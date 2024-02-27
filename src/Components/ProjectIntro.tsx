@@ -1,6 +1,6 @@
 
 
-import { MouseEventHandler } from 'react';
+
 import { projects } from '../datas/projects';
 
 export const ProjectIntro: React.FC = () => {
@@ -18,12 +18,12 @@ export const ProjectIntro: React.FC = () => {
          {
           projects.map((project ,index)=>(
             <article key={index} className='flex-col justify-center items-center py-10' >
-          <div className='flex justify-start pl-7 gap-10 text-center mt-10 items-center z-100'>
-            <h2 className='text-[#311d78] font-marker font-extrabold text-7xl'>#{index + 1}</h2>
-            <h3 className='text-white font-nunito font-bold text-5xl flex justify-between items-center '>{project.name}
+          <div className='flex justify-start p-2 md:pl-7 gap-5 md:gap-10 text-center mt-10 items-center z-100'>
+            <h2 className='text-[#48bf39] font-marker font-extrabold text-5xl  md:text-7xl '>#{index + 1}</h2>
+            <h3 className='text-white font-nunito font-bold text-4xl md:text-5xl flex justify-between items-center '>{project.name}
             </h3>
             <a href={project.link} >
-              <button   className='p-2 bg-[#3d2592] hover:bg-[#150f29]  text-white text-xl rounded-xl font-nunito font-medium text-center ml-10 active:bg-[#3d2592]capitalize '>
+              <button   className='p-1 md:p-2 bg-[#3d2592] hover:bg-[#150f29] capitalize  text-white  text-xl rounded-xl font-nunito font-medium text-center ml-5 md:ml-10 active:bg-[#3d2592]capitalize '>
                 visit live
               </button>
             </a>
@@ -49,7 +49,17 @@ export const ProjectIntro: React.FC = () => {
          
          
       </section>
-      
+      <svg className='rotate-180 w-full' xmlns="http://www.w3.org/2000/svg" version="1.1" width="1440" height="330" preserveAspectRatio="none" viewBox="0 0 1440 330">
+          <g mask="url(&quot;#SvgjsMask1025&quot;)" fill="none">
+              <path d="M 0,99 C 48,83.8 144,14.6 240,23 C 336,31.4 384,138 480,141 C 576,144 624,33.6 720,38 C 816,42.4 864,167.4 960,163 C 1056,158.6 1104,25 1200,16 C 1296,7 1392,97.6 1440,118L1440 330L0 330z" fill="rgba(156, 231, 222, 0.42)"></path>
+              <path d="M 0,285 C 32,275.4 96,235.2 160,237 C 224,238.8 256,293.8 320,294 C 384,294.2 416,238 480,238 C 544,238 576,300 640,294 C 704,288 736,203.2 800,208 C 864,212.8 896,320.4 960,318 C 1024,315.6 1056,204.6 1120,196 C 1184,187.4 1216,273.6 1280,275 C 1344,276.4 1408,217.4 1440,203L1440 330L0 330z" fill="rgba(0, 0, 0, 0)"></path>
+          </g>
+          <defs>
+              <mask id="SvgjsMask1025">
+                  <rect width="1440" height="330" fill="#ffffff"></rect>
+              </mask>
+          </defs>
+      </svg>
     </>
   );
 };
