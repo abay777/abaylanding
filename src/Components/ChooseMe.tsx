@@ -1,10 +1,16 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { FcApproval, FcAreaChart, FcConferenceCall, FcIdea, FcSportsMode } from "react-icons/fc"
+
 
 export const ChooseMe:React.FC = () => {
   return (
     <>
-        <section className='relative -mt-[14rem]  flex-col'>
+        <motion.section
+          initial={{opacity:0}}
+          whileInView={{opacity:1}}
+          transition={{duration:.5}}
+         className='relative -mt-[14rem]  flex-col'>
           <div className='absolute top-0 -z-10 '>
           <svg className=' w-full triangle-float3 triangle-float1 triangle-float2' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
                 <g mask="url(&quot;#SvgjsMask1026&quot;)" fill="none">
@@ -27,8 +33,12 @@ export const ChooseMe:React.FC = () => {
           </svg>
           </div>
         <h1 className='text-4xl md:text-7xl lg:text-9xl font-medium capitalize text-[#462255] text-center md:mt-5 mt-10'>Why choose me ?</h1>
-        <main className='grid grid-cols-1 lg:flex flex-wrap lg:gap-4 gap-2 justify-center pb-[13rem] md:pb-[15rem] lg:pb-[15rem] p-4'>
-          <article className='bg-[#ffa69e55] lg:max-w-[25rem] w-[100%]  p-4 flex-col justify-evenly items-center text-center mt-8 rounded-xl'>
+        <motion.main 
+         initial={{translateX:'-100', opacity:0, }}
+         whileInView={{translateX:'0', opacity:1,}}
+         transition={{duration:1,ease:'easeInOut'}}
+        className='grid grid-cols-1 lg:flex flex-wrap lg:gap-4 gap-2 justify-center pb-[13rem] md:pb-[15rem] lg:pb-[15rem] p-4'>
+          <article  className='bg-[#ffa69e55] lg:max-w-[25rem] w-[100%]  p-4 flex-col justify-evenly items-center text-center mt-8 rounded-xl'>
             <h2 className='text-2xl text-[#AA4465] flex items-center font-ubuntu justify-center gap-2 '>
               <FcSportsMode size={40}/>
               Passion-Driven Learner
@@ -38,7 +48,7 @@ export const ChooseMe:React.FC = () => {
             Each project is a chance to learn, grow, and bring a fresh perspective to the table.
             </p>
           </article>
-          <article className='bg-[#ffa69e55] lg:max-w-[25rem] w-[100%]  p-4 flex-col justify-evenly items-center text-center mt-8 rounded-xl'>
+          <article   className='bg-[#ffa69e55] lg:max-w-[25rem] w-[100%]  p-4 flex-col justify-evenly items-center text-center mt-8 rounded-xl'>
             <h2 className='text-2xl text-[#AA4465] flex items-center font-ubuntu justify-center gap-2 '>
               <FcIdea size={40}/>
               Creative Coding Explorer
@@ -80,8 +90,8 @@ export const ChooseMe:React.FC = () => {
               ensuring we're always on the cutting edge
             </p>
           </article>    
-        </main>
-      </section>
+        </motion.main>
+      </motion.section>
       <svg className='h-[20rem] w-full -mt-[12rem] rotate-180' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
             <g mask="url(&quot;#SvgjsMask1061&quot;)" fill="none">
                 <path d="M1488 560L0 560 L0 293Q95.89 316.89, 72 412.78Q154.96 375.74, 192 458.7Q194.9 389.6, 264 392.5Q263.26 319.76, 336 319.03Q361.09 272.12, 408 297.21Q465.8 283, 480 340.8Q580.09 368.89, 552 468.98Q530.95 327.93, 672 306.88Q721.64 236.52, 792 286.17Q895.89 270.06, 912 373.96Q998.13 340.09, 1032 426.22Q1057.58 331.8, 1152 357.37Q1196.09 329.46, 1224 373.54Q1268.63 346.18, 1296 390.81Q1311.54 334.35, 1368 349.89Q1434.97 296.86, 1488 363.83z" fill="rgba(156, 231, 222, 1)"></path>

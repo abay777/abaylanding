@@ -4,4 +4,5 @@ import { Skills } from "./Skills";
 import { ChooseMe } from "./ChooseMe";
 import { ProjectIntro } from "./ProjectIntro";
 import { Contact } from "./Contact";
-export {Navbar ,Hero , Skills , ChooseMe , ProjectIntro, Contact};
+import { Footer } from "./Footer";
+export {Navbar ,Hero , Skills , ChooseMe , ProjectIntro, Contact, Footer};

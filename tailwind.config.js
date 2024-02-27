@@ -14,7 +14,11 @@ export default {
     extend: {
       backgroundImage: {
         'coding-img': "url('./src/assets/bg for projects.png')"
+      },
+      screens:{
+        md:'880px'
       }
+
     },
    
   },

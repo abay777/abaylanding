@@ -2,22 +2,25 @@
 
 
 import { projects } from '../datas/projects';
+import { motion } from 'framer-motion';
 
 export const ProjectIntro: React.FC = () => {
 
-//  const handleClick:MouseEventHandler<HTMLButtonElement> = ( ) => {
-//   console.log('clicked')
-//   window.location.href = 'https://rentingcar.netlify.app/'  
-//  }
+
 
   return (
     <>
-       <section className='-mt-[20rem] pt-[10rem] bg-coding-img' >
+       <section 
+       className='-mt-[20rem] pt-[10rem] bg-coding-img' >
         <h1 className='bg-[#00000020] text-5xl text-white first-letter:text-[#AA4465] text-center mx-auto capitalize font-bold font-nunito mt-[10rem]' >MY projects 🍫</h1>
          
          {
           projects.map((project ,index)=>(
-            <article key={index} className='flex-col justify-center items-center py-10' >
+            <motion.article 
+             initial={{opacity:0,translateX:-100}}
+             whileInView={{opacity:1 , translateX:0}}
+             transition={{ease:'easeInOut' ,delay:1}}
+            key={index} className='flex-col justify-center items-center py-10' >
           <div className='flex justify-start p-2 md:pl-7 gap-5 md:gap-10 text-center mt-10 items-center z-100'>
             <h2 className='text-[#48bf39] font-marker font-extrabold text-5xl  md:text-7xl '>#{index + 1}</h2>
             <h3 className='text-white font-nunito font-bold text-4xl md:text-5xl flex justify-between items-center '>{project.name}
@@ -41,7 +44,7 @@ export const ProjectIntro: React.FC = () => {
                
               </div>
           </main>
-         </article>
+         </motion.article>
 
           ))
           
