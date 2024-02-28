@@ -4,6 +4,7 @@ import { ReactTyped } from 'react-typed'
 import { motion } from 'framer-motion'
 
 export const Hero:React.FC = () => {
+  
   return (
   
   <section id='home' className='h-[30rem] font-nunito flex flex-col-reverse justify-evenly items-center md:flex-row pt-[8rem] md:pt-0 md:justify-evenly md:items-center -mb-[10rem] md:mt-0  mt-16'>
