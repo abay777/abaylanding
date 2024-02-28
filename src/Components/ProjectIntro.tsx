@@ -10,8 +10,8 @@ export const ProjectIntro: React.FC = () => {
 
   return (
     <>
-       <section 
-       className='-mt-[20rem] pt-[10rem] bg-coding-img' >
+       <section id='projects'
+       className='-mt-[20rem] pt-[10rem] projectbg' >
         <h1 className='bg-[#00000020] text-5xl text-white first-letter:text-[#AA4465] text-center mx-auto capitalize font-bold font-nunito mt-[10rem]' >MY projects 🍫</h1>
          
          {
@@ -22,7 +22,7 @@ export const ProjectIntro: React.FC = () => {
              transition={{ease:'easeInOut' ,delay:1}}
             key={index} className='flex-col justify-center items-center py-10' >
           <div className='flex justify-start p-2 md:pl-7 gap-5 md:gap-10 text-center mt-10 items-center z-100'>
-            <h2 className='text-[#48bf39] font-marker font-extrabold text-5xl  md:text-7xl '>#{index + 1}</h2>
+            <h2 className='text-[#FFA69E] font-marker font-extrabold text-5xl  md:text-7xl '>#{index + 1}</h2>
             <h3 className='text-white font-nunito font-bold text-4xl md:text-5xl flex justify-between items-center '>{project.name}
             </h3>
             <a href={project.link} >

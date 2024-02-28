@@ -20,9 +20,9 @@ export const Contact:React.FC = () => {
 
   return (
     <>
-        <section className=' flex flex-col justify-center items-center mx-auto  '>
+        <section className=' flex flex-col justify-center items-center mx-auto  ' id='contact'>
             <p className='text-[#87197c] text-3xl font-semibold'>Contact</p>
-            <h2 className='capitalize text-xl font-ubuntu font-extrabold mt-5 tracking-wider'>don't hesitate just hit me up! 😊👇</h2>
+            <h2 className='capitalize text-xl font-ubuntu font-extrabold mt-5 md:tracking-wider tracking-wide'>don't hesitate just hit me up! 😊👇</h2>
             <article className=' grid md:flex items-center justify-center gap-6'>
                 <div className='flex mt-5 link relative flex-col'>
                     <h1 className='font-nunito text-xl text-[#462255] font-bold text-center flex items-center justify-center gap-4'><MdAttachEmail className='bg-white rounded-full p-2' size={40} color='#3346c0' />Email</h1>

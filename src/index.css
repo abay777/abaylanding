@@ -12,9 +12,13 @@ body{
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @layer components {
-    .projbg {
-      background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fdark-blur&psig=AOvVaw2P6ZC0f5CZUXNaPPC1WBKc&ust=1708951681136000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKDTqKPDxoQDFQAAAAAdAAAAABAE);
+    .projectbg {
+      background-image: url(./assets/bg-for-projects.png);
      background-repeat: no-repeat;
      background-size: cover;
     }
@@ -25,4 +29,18 @@ body{
    .link:hover .copy{
     visibility: visible;
    }
+   
+.loader {
+    height: 5px;
+    width: 150px;
+    --c:no-repeat linear-gradient(#6100ee 0 0);
+    background: var(--c),var(--c),#d7b8fc;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+  }
+  @keyframes l16 {
+    0%   {background-position:-150% 0,-150% 0}
+    66%  {background-position: 250% 0,-150% 0}
+    100% {background-position: 250% 0, 250% 0}
+  }
   }

@@ -34,7 +34,7 @@ export const Skills: React.FC = () => {
             </mask>
         </defs>
     </svg>
-      <section className='  mt-0 pb-[2rem] bg-[#9ce7de]  '>
+      <section id='aboutme' className='  mt-0 pb-[2rem] bg-[#9ce7de]  '>
       
       <h3 className='font-marker text-center text-3xl md:text-5xl text-[#462255]'>
         <span className='text-[#AA4465] pr-5'>My</span>Skills
@@ -66,6 +66,7 @@ export const Skills: React.FC = () => {
                      transition={{duration:1}}>
                      <motion.img
                         src={abaybg}
+                        loading='lazy'
                         alt="Abay sankar"
                         className='w-[24rem] object-fill m-0 '      
                         initial={{ borderRadius:'83% 5% 70% 8%' }}

@@ -1,8 +1,8 @@
-import React, { UIEventHandler, useState } from 'react'
+import React, {  UIEventHandler, useRef, useState } from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { FaGithub, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { IoMdClose } from 'react-icons/io'
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 
 
 const variants = {
@@ -12,15 +12,18 @@ const variants = {
   }
 
 export const Navbar:React.FC = () => {
+    const navStickyRef = useRef<HTMLDivElement>(null)
+    const inView = useInView(navStickyRef)
     const [burgerMenu,setBurgerMenu]=useState<boolean>(false);
 
     const handleBurger:UIEventHandler = ()=>{
         setBurgerMenu(!burgerMenu);
     }
 
+
   return (
-    <nav className=''>
-        <section className='hidden md:flex  justify-between relative px-4'>
+    <nav className='' ref={navStickyRef}>
+        <section className={inView?'hidden md:flex  justify-between relative px-4' : 'fixed hidden md:flex justify-between left-0 right-0 z-20 bg-[#9ce7de] px-4 py-1'}>
             <div>
                 <h3 className='text-4xl text-gray-800  min-w-[245px] font-marker'>
                     Abay sankar
@@ -33,14 +36,14 @@ export const Navbar:React.FC = () => {
             </div>
             <div className='ml-6 w-[800px] justify-between hidden md:flex' >
                 <ul  className='flex gap-8 items-center font-nunito text-xl text-[#462255] font-bold'>
-                    <li className='duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] '><a href="">Portfolio</a></li>
-                    <li className='duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] '><a href="">About Me</a></li>
-                    <li className='duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] '><a href="">Home</a></li>
-                    <li className='duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] '><a href="">Contact</a></li>
+                    <li className='duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] '><a href="#home">Home</a></li>
+                    <li className='duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] '><a href="#aboutme">About Me</a></li>
+                    <li className='duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] '><a href="#projects">Portfolio</a></li>
+                    <li className='duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] '><a href="#contact">Contact</a></li>
                 </ul>
                 <div className='flex justify-evenly gap-4 items-center mr-4 '>
-                    <a href=""> <FaGithub className=' text-[#462255] duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2]' size={25}/></a>
-                    <a href=""><FaInstagram size={25} className=' text-[#462255] duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2]'/></a>
+                    <a href="https://github.com/abay777"> <FaGithub className=' text-[#462255] duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2]' size={25}/></a>
+                    <a href="https://www.linkedin.com/in/abay-sankar-s-95796a248?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjTcr9q8hSjivlwWM8IrV5A%3D%3D"><FaLinkedin size={25} className=' text-[#462255] duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2]'/></a>
 
                 </div>
             </div>
@@ -66,8 +69,8 @@ export const Navbar:React.FC = () => {
                     <li className='duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] '><a href="">Contact</a></li>
                 </motion.ul>
                 <div className='flex  justify-center gap-6 items-center mt-4 '>
-                    <a href=""> <FaGithub className='text-[#462255] duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] ' size={40} /></a>
-                    <a href=""><FaInstagram className='text-[#462255] duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] ' size={40}/></a>
+                    <a href="https://github.com/abay777"> <FaGithub className='text-[#462255] duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] ' size={40} /></a>
+                    <a href="https://www.linkedin.com/in/abay-sankar-s-95796a248?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjTcr9q8hSjivlwWM8IrV5A%3D%3D"><FaLinkedin className='text-[#462255] duration-500 ease-in-out hover:scale-150 hover:font-bold hover:text-[#AA4465] active:text-[#9DB5B2] ' size={40}/></a>
 
                 </div>
             </div>
