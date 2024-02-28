@@ -66,7 +66,7 @@ export const Hero:React.FC = () => {
     initial={{opacity:0 , y:'50%',scale:0.5}}
     transition={{ease:'easeInOut', duration: 1.2}}
     whileInView={{opacity:1, y:0, scale:1}}>
-        <img src={abay} alt="picture of abay-sankar" className='size-[25rem]'/>
+        <img src={abay} loading='lazy' alt="picture of abay-sankar" className='size-[25rem]'/>
     </motion.article>
    
 

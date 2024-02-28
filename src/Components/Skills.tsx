@@ -66,6 +66,7 @@ export const Skills: React.FC = () => {
                      transition={{duration:1}}>
                      <motion.img
                         src={abaybg}
+                        loading='lazy'
                         alt="Abay sankar"
                         className='w-[24rem] object-fill m-0 '      
                         initial={{ borderRadius:'83% 5% 70% 8%' }}

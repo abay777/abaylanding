@@ -20,8 +20,6 @@ export const Navbar:React.FC = () => {
         setBurgerMenu(!burgerMenu);
     }
 
-    console.log(inView);
-    
 
   return (
     <nav className='' ref={navStickyRef}>
