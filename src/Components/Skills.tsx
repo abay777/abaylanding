@@ -34,7 +34,7 @@ export const Skills: React.FC = () => {
             </mask>
         </defs>
     </svg>
-      <section className='  mt-0 pb-[2rem] bg-[#9ce7de]  '>
+      <section id='aboutme' className='  mt-0 pb-[2rem] bg-[#9ce7de]  '>
       
       <h3 className='font-marker text-center text-3xl md:text-5xl text-[#462255]'>
         <span className='text-[#AA4465] pr-5'>My</span>Skills
