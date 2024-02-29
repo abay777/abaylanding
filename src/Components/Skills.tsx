@@ -17,7 +17,7 @@ export const Skills: React.FC = () => {
 
   const textParallax = useParallax<HTMLDivElement>({
     opacity:[-5,5],
-    translateY:[-100,15],
+    translateY:[-75,15],
     easing:'easeInOutCubic'
   })
 
@@ -61,7 +61,7 @@ export const Skills: React.FC = () => {
         
         <article className=' mt-10 md:flex grid grid-cols-1 justify-evenly p-2'>
                     <motion.article className='flex md:justify-normal justify-center '
-                     initial={{translateY:-100, opacity:0}}
+                     initial={{translateY:-40, opacity:0}}
                      whileInView={{translateY:0, opacity:1}}
                      transition={{duration:1}}>
                      <motion.img
@@ -77,7 +77,7 @@ export const Skills: React.FC = () => {
                     </motion.article>
                    
                   <article className='relative flex-col  '>
-                    <p ref={textParallax.ref} className='p-4 pt-[rem] md:p-0 font-medium text-[#462255] flex-col  items-center md:text-start text-center w-[100%] md:w-[30rem]  leading-8 '>
+                    <p ref={textParallax.ref} className='p-2 pt-[rem] md:p-0 font-medium text-[#462255] flex-col  items-pretty md:text-start text-center  w-[100%] md:w-[30rem]  leading-8 '>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#AA4465" className="bi bi-quote md:-ml-[2rem] size-[1.5rem]" viewBox="0 0 16 16">
                           <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
                         </svg>
@@ -86,7 +86,7 @@ export const Skills: React.FC = () => {
                         I create scalable and efficient front-end solutions. With a flair for captivating animations 
                         and a keen eye for design using Tailwind CSS, I transform ideas into impactful digital experiences.
                         Let's collaborate and bring your vision to life with innovation and success at the forefront.    
-                        <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="#AA4465" className="bi bi-quote rotate-180 ml-[20rem] md:ml-[12rem] size-[1.5rem]" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="#AA4465" className="bi bi-quote rotate-180 ml-[15rem]  lg:ml-[12rem] size-[1.5rem]" viewBox="0 0 16 16">
                           <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
                         </svg>
                     </p>
