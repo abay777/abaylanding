@@ -18,7 +18,7 @@ html{
 
 @layer components {
     .projectbg {
-      background-image: url(./assets/bg-for-projects.png);
+      background-image: url(./assets/bg-for-projects.jpg);
      background-repeat: no-repeat;
      background-size: cover;
     }
@@ -29,7 +29,26 @@ html{
    .link:hover .copy{
     visibility: visible;
    }
-   
+
+   .jelly-image {
+    display: block;
+    border: rgb(112, 186, 165) 5px solid;
+    height: auto;
+    border-radius: 50%; /* Make the border circular */
+    animation: blob-animation 12s infinite ease-in-out alternate; /* Apply animation */
+  }
+  
+  @keyframes blob-animation {
+    0% {
+        border-radius: 39% 54% 79% 84% / 90% 70% 50% 20%;
+    }
+    50% {
+      border-radius: 91% 30% 70% 10% / 80% 50% 10% 30%;
+    }
+    100% {
+        border-radius: 90% 70% 49% 50% / 95% 68% 79% 99%;
+    }
+  }
 .loader {
     height: 5px;
     width: 150px;
