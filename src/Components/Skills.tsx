@@ -6,7 +6,7 @@ import { BiLogoTypescript, BiSolidFileCss } from 'react-icons/bi';
 import { GrReactjs } from 'react-icons/gr';
 import { SiRedux, SiTailwindcss } from 'react-icons/si';
 import { RiJavascriptFill } from 'react-icons/ri';
-import abaybg from '../assets/abay with bg.jpg';
+import abaybg from '../assets/abay with bgs.jpg';
 import { ImageComponent } from './ImageComponent';
 
 

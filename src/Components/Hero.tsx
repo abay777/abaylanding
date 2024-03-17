@@ -1,5 +1,5 @@
 import React from 'react'
-import abay from '../assets/abay profile.png'
+import abay from '../assets/abay profile.jpg'
 import { ReactTyped } from 'react-typed'
 import { motion } from 'framer-motion'
 import { ImageComponent } from './ImageComponent';
