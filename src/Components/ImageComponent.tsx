@@ -7,7 +7,7 @@ interface props {
     hash:string
 }
 
-export const ImageComponent:React.FC<any> = (props) => {
+export const ImageComponent:React.FC<props> = (props) => {
     const {src ,clas, hash} = props
     console.log(hash)
    const [imageLoaded, setImageLoded] = useState<boolean>(false);
