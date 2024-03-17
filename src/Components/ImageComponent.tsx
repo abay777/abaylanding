@@ -9,7 +9,6 @@ interface props {
 
 export const ImageComponent:React.FC<props> = (props) => {
     const {src ,clas, hash} = props
-    console.log(hash)
    const [imageLoaded, setImageLoded] = useState<boolean>(false);
    useEffect(()=>{
     const img = new Image()
