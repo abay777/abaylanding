@@ -7,6 +7,7 @@ import { GrReactjs } from 'react-icons/gr';
 import { SiRedux, SiTailwindcss } from 'react-icons/si';
 import { RiJavascriptFill } from 'react-icons/ri';
 import abaybg from '../assets/abay with bg.png';
+import { ImageComponent } from './ImageComponent';
 
 
 export const Skills: React.FC = () => {
@@ -55,7 +56,7 @@ export const Skills: React.FC = () => {
               </div>
               <div className='flex gap-5 items-center' ref={parallax.ref}>
                   <GrReactjs size={70} className='text-[#2ab1bb]' />
-                  <SiRedux size={70} className='text-[#5f2ec0]' />
+                  <SiRedux size={70} className='text-[#5f2ec0] ' />
               </div>
         </article>
         
@@ -64,15 +65,10 @@ export const Skills: React.FC = () => {
                      initial={{translateY:-40, opacity:0}}
                      whileInView={{translateY:0, opacity:1}}
                      transition={{duration:1}}>
-                     <motion.img
+                     <ImageComponent
                         src={abaybg}
-                        loading='lazy'
-                        alt="Abay sankar"
-                        className='w-[24rem] object-fill m-0 '      
-                        initial={{ borderRadius:'83% 5% 70% 8%' }}
-                        animate={{ borderRadius:'23% 80% 10% 82%' }}
-                        transition={{ duration: 14, ease: 'easeInOut' , repeatType:'reverse' ,repeat:Infinity}}
-                      />
+                        clas={'w-[24rem] object-fill m-0 rounded-full jelly-image '}
+                        hash={'LGE36n^,00EM009E_3xa?w%gVYrr'} />
 
                     </motion.article>
                    

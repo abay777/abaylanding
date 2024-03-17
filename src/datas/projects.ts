@@ -16,6 +16,7 @@ import React from 'react'
     icons:React.ElementType[],
     Tech:string[],
     link:string
+    hash:string
 } 
 
 
@@ -31,6 +32,7 @@ export const projects:projectDetails[] = [
         ,icons:[FaReact,TbFileTypeCss,SiReactrouter,SiJavascript]
         ,Tech:['reactjs','javascript','css','vanilla-react']
         ,link:'https://rentingcar.netlify.app/'
+        ,hash:'LaGI~2Mxt7%200xtWBM|~qkDt7bH'
 
     },
     {
@@ -41,6 +43,7 @@ export const projects:projectDetails[] = [
         ,icons:[TbApi, FaReact ,TbFileTypeCss, SiFramer, SiReactrouter, SiRedux, SiTypescript]
         ,Tech:['react-js','Typescript', 'css', 'redux-toolKit', 'Framer-motion','vanilla-react']
         ,link:'https://cryptocurrency-track.netlify.app/'
+        ,hash:'L3AJjar9}{wq^$-K$v=_0^RsxzWu'
 
     },
   
